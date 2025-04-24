@@ -1,0 +1,8 @@
+Time and Space Complexities
+
+My DirectedGraphChecker program has a worst case time complexity of O(V^2), where V is the number of Vertexes represented in the matrix. Because there's nothing in my method that requires space to be made in proportion to the input size, the space complexity is O(1).
+
+My PathsOfWeight7 program has a time complexity of O(V+E), as for the worst case, it will go through all vertexes and edges. It also has a space complexity of O(V), as the HashSet will at most, track all Vertexes, but the program will only need to use up to O(7) space to store the path if each traversal only has a weight of 1.
+
+My DrawGraph program has a time and space complexity of O(V^2), where V is the number of Vertexes represented in the array.
+For the space complexity, the I used another matrix that holds V*V values to represent adjacency. For the time complexity, there's a loop that iterates v * v times to print the adjacency table.
